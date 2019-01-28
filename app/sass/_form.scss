@@ -1,0 +1,60 @@
+.form {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -17.5px -40px;
+  }
+
+  &__list-item {
+    width: calc(100% / 3);
+    padding: 17.5px 40px;
+  }
+
+  &__item {
+    padding: 16px 9px;
+    border-radius: 3px;
+    display: block;
+    transition: background .4s;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+    &:hover {
+      background: #eaeaee;
+    }
+
+    &.focused {
+      background: none;
+      box-shadow: inset 0 0 0 2px #a2d0fd;
+    }
+
+    &.filled {
+      background: #f7f7fa;
+    }
+  }
+
+  &__label {
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  &__input {
+    font-size: 16px;
+    color: #27252a;
+    width: 100%;
+    border: none;
+    display: inline-block;
+    @include roboto;
+  }
+
+  &__textarea {
+    min-height: 40px;
+    resize: vertical;
+    color: #000;
+  }
+
+  &__btns {
+    margin-top: 40px;
+  }
+}

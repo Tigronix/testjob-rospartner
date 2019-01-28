@@ -9,6 +9,10 @@ body {
 	@include roboto;
 }
 
+.main {
+	padding: 98px 34px 0;
+}
+
 .icon {
 	display: inline-block;
   width: 1em;
@@ -20,4 +24,27 @@ body {
 
 button {
 	display: block;
+}
+
+.h2 {
+	font-size: 18px;
+	font-weight: 500;
+	color: #2c2c2c;
+	margin-bottom: 12px;
+}
+
+p {
+	font-size: 14px;
+	color: #000;
+	margin-bottom: 15px;
+}
+
+a {
+	font-size: 14px;
+	color: #2196f3;
+	text-decoration: underline;
+}
+
+li {
+	list-style: none;
 }

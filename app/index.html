@@ -12,47 +12,49 @@
 
 <body>
 	<div id="global-svg"></div>
-	<main class="main">
-		<form action="" class="form">
-			<h2 class="h2">Основная информация</h2>
-			<p>Sed ut perspiciatis, <a href="#">unde omnis iste</a> natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-			<ul class="form__list">
-				<li class="form__list-item">
-					<label class="form__item">
-						<span class="form__label">Название группы</span>
-						<input placeholder="Введите название" type="text" class="form__input" required>
-					</label>
-				</li>
-				<li class="form__list-item">
-					<label class="form__item">
-						<span class="form__label">ФИО ответственного</span>
-						<input value="Михайлов Игорь Петрович" placeholder="Введите название" type="text" class="form__input" required>
-					</label>
-				</li>
-				<li class="form__list-item">
-					<label class="form__item">
-						<span class="form__label">Email для входа</span>
-						<input placeholder="Введите название" type="text" class="form__input" required>
-					</label>
-				</li>
-			</ul>
-			<label class="form__item">
-				<span class="form__label">Описание рабочей группы</span>
-				<textartea class="form__textarea" placeholder="Введите краткое и емкое описание для рабочей группы"></textartea>
-			</label>
-			<div class="form__btns">
-				<button type="button" class="btn btn--blue">Сохранить</button>
-				<button type="button" class="btn btn--grey">Отмена</button>
-			</div>
-		</form>
-		<section class="notifications">
-			<h2 class="h2">Управление уведомлениями</h2>
-			<div class="alert-box">
-				<div class="alert-box__title">Внимание!</div>
-				<div class="alert-box__desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem.</div>
-			</div>
-		</section>
-	</main>
+	<div class="global-wrapper">
+		<main class="main">
+			<form action="" class="form">
+				<h2 class="h2">Основная информация</h2>
+				<p>Sed ut perspiciatis, <a href="#">unde omnis iste</a> natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+				<ul class="form__list">
+					<li class="form__list-item">
+						<label class="form__item">
+							<span class="form__label">Название группы</span>
+							<input placeholder="Введите название" type="text" class="form__input" required>
+						</label>
+					</li>
+					<li class="form__list-item">
+						<label class="form__item">
+							<span class="form__label">ФИО ответственного</span>
+							<input value="Михайлов Игорь Петрович" placeholder="Введите название" type="text" class="form__input" required>
+						</label>
+					</li>
+					<li class="form__list-item">
+						<label class="form__item">
+							<span class="form__label">Email для входа</span>
+							<input placeholder="Введите название" type="text" class="form__input" required>
+						</label>
+					</li>
+				</ul>
+				<label class="form__item">
+					<span class="form__label">Описание рабочей группы</span>
+					<textarea class="form__input form__textarea" placeholder="Введите краткое и емкое описание для рабочей группы"></textarea>
+				</label>
+				<div class="form__btns">
+					<button type="button" class="btn btn--blue">Сохранить</button>
+					<button type="button" class="btn btn--grey">Отмена</button>
+				</div>
+			</form>
+			<section class="notifications">
+				<h2 class="h2">Управление уведомлениями</h2>
+				<div class="alert-box">
+					<div class="alert-box__title">Внимание!</div>
+					<div class="alert-box__desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem.</div>
+				</div>
+			</section>
+		</main>
+	</div>
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>

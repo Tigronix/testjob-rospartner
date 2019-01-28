@@ -10,7 +10,37 @@ TJ.svgGlobal = function(){
     })
 };
 
+TJ.formFocus = function(){
+   const $formItemsInput = $('.form__item .form__input');
+
+   $formItemsInput.each(function(){
+     $(this).on('focus', function(){
+       const $formItem = $(this).closest('.form__item');
+
+       $formItem.addClass('focused');
+     });
+
+     $(this).on('blur', function(){
+       const $formItem = $(this).closest('.form__item');
+
+       $formItem.removeClass('focused');
+     });
+
+     $(this).on('change', function(){
+       const $formItem = $(this).closest('.form__item');
+       const value = $(this).val();
+
+       if(value != 0){
+          $formItem.addClass('filled');
+       }else{
+         $formItem.removeClass('filled');
+       }
+     });
+   });
+};
+
 
 (function onPageReady () {
   TJ.svgGlobal();
+  TJ.formFocus();
 }());

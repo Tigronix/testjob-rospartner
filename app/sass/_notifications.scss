@@ -1,0 +1,125 @@
+.notifications {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+  margin-bottom: 40px;
+
+  &__header {
+    display: block;
+    background: none;
+    text-align: left;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    padding-bottom: 15px;
+    box-shadow: 0px 6px 9px -3px rgba(#000, .2);
+    margin-bottom: 24px;
+
+    &.active {
+      .notifications {
+        &__title-text {
+          &:before {
+            display: block;
+          }
+        }
+
+        &__img {
+          filter: none;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__item {
+    width: calc(100% / 4);
+    padding: 0 20px;
+  }
+
+  &__img {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: opacity .4s, filter .4s;
+    margin-bottom: 5px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+  }
+
+  &__title-text {
+    display: inline-block;
+    position: relative;
+
+    &:before {
+      display: none;
+      content: '';
+      width: 9px;
+      height: 9px;
+      background: #26a69a;
+      border-radius: 50%;
+      position: absolute;
+      left: -13px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__btn-cancel {
+    max-width: none;
+    background: #e1e1e3;
+    max-width: 192px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+
+  &__list {
+    max-width: 200px;
+    margin: 0 auto;
+    transform: translateX(20px);
+  }
+
+  &__list-li {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #000;
+    position: relative;
+    list-style: none;
+  }
+
+  &__copy-desc {
+    display: inline-block;
+    max-width: 160px;
+  }
+
+  &__icon {
+    font-size: 17px;
+    color: #aeb2bf;
+    cursor: pointer;
+    transition: color .4s;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:hover {
+      color: #687189;
+    }
+  }
+
+  &__checkbox {
+    justify-content: center;
+  }
+}

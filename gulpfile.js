@@ -9,7 +9,6 @@ var gulp = require('gulp'),
   pngquant = require('imagemin-pngquant'),
   cache = require('gulp-cache'),
   autoprefixer = require('gulp-autoprefixer'),
-  upmodul = require("gulp-update-modul"),
   browserSync = require('browser-sync');
 
 gulp.task('sass', function() { // Создаем таск "sass"
@@ -82,17 +81,11 @@ gulp.task('fonts', function() { // Создаем таск "sass"
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
-  gulp.start('update-modul');
   gulp.watch(['app/sass/**/*.sass', 'app/sass/**/*.scss'], ['sass']);
   gulp.watch('app/*.html', browserSync.reload);
   gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
-//update-modul
-gulp.task('update-modul', function() {
-  gulp.src('package.json')
-    .pipe(upmodul('latest', 'true')); //update all modules latest version.
-});
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts', 'fonts'], function() {
 

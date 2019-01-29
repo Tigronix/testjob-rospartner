@@ -11,20 +11,54 @@
 </head>
 
 <body>
-	<div id="global-svg">
-		<global-svg></global-svg>
+	<div id="global-svg"></div>
+	<div class="global-wrapper">
+		<main class="main">
+			<form action="" class="form">
+				<h2 class="h2">Основная информация</h2>
+				<p>Sed ut perspiciatis, <a href="#">unde omnis iste</a> natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+				<ul class="form__list">
+					<li class="form__list-item">
+						<label class="form__item">
+							<span class="form__label">Название группы</span>
+							<input placeholder="Введите название" type="text" class="form__input" required>
+						</label>
+					</li>
+					<li class="form__list-item">
+						<label class="form__item">
+							<span class="form__label">ФИО ответственного</span>
+							<input placeholder="Введите название" type="text" class="form__input" required>
+						</label>
+					</li>
+					<li class="form__list-item">
+						<label class="form__item">
+							<span class="form__label">Email для входа</span>
+							<input placeholder="Введите название" type="text" class="form__input" required>
+						</label>
+					</li>
+				</ul>
+				<label class="form__item form__item--single">
+					<span class="form__label">Описание рабочей группы</span>
+					<textarea class="form__input form__textarea" placeholder="Введите краткое и емкое описание для рабочей группы"></textarea>
+				</label>
+				<div class="form__btns">
+					<button type="submit" class="btn btn--blue form__btns-btn">Сохранить</button>
+					<button type="reset" class="btn btn--grey form__btns-btn">Отмена</button>
+				</div>
+			</form>
+			<section class="notifications">
+				<h2 class="h2 h2--mb40">Управление уведомлениями</h2>
+				<div class="alert-box">
+					<svg class="alert-box__icon icon icon-warning"><use xlink:href="#icon-warning"></use></svg>
+					<div class="alert-box__content">
+						<div class="alert-box__title">Внимание!</div>
+						<div class="alert-box__desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem.</div>
+					</div>
+				</div>
+			</section>
+		</main>
 	</div>
-		<button data-class="test" data-number="1" class="animate__button">show accordion<svg class="icon icon-down"><use xlink:href="#icon-circle-down"></use></svg></button>
-		<ul data-class="test" data-number="1" class="animate__content animated">
-			111111111111111111111
-		</ul>
-		
-		
-		<button data-class="accordion" data-number="1" class="animate__button">show accordion<svg class="icon icon-down">
-		<use xlink:href="#icon-circle-down"></use></svg></button>
-		<ul data-class="accordion" data-number="1" class="accordion animate__content animated">
-			222222222222222222222
-		</ul>
+
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 </body>

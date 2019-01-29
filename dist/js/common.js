@@ -39,8 +39,17 @@ TJ.formFocus = function(){
    });
 };
 
+TJ.toggleActive = function(){
+  const $elem = $('.toggleActiveElem');
+
+  $elem.on('click', function(){
+    $(this).toggleClass('active');
+  });
+};
+
 
 (function onPageReady () {
   TJ.svgGlobal();
   TJ.formFocus();
+  TJ.toggleActive();
 }());

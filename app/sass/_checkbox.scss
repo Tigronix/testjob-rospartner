@@ -1,0 +1,43 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+
+  &__input {
+    display: none;
+
+    &:checked + .checkbox__icons .checkbox__icon--empty {
+      display: none;
+    }
+
+    &:checked + .checkbox__icons .checkbox__icon--active {
+      display: block;
+    }
+  }
+
+  &__icons {
+    width: 20px;
+    height: 100%;
+    margin-right: 12px;
+    position: relative;
+    display: inline-block;
+  }
+
+  &__icon {
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--empty {
+      color: #5e5e5f;
+    }
+
+    &--active {
+      color: #008dfe;
+      display: none;
+    }
+  }
+}

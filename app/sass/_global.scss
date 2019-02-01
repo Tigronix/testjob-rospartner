@@ -6,11 +6,7 @@
 }
 
 body {
-	@include roboto;
-}
-
-.main {
-	padding: 98px 34px 0;
+	@include ttNorms;
 }
 
 .icon {
@@ -27,26 +23,15 @@ button {
 }
 
 .h2 {
-	font-size: 18px;
-	font-weight: 500;
-	color: #2c2c2c;
-	margin-bottom: 12px;
 
-	&--mb40 {
-		margin-bottom: 40px;
-	}
 }
 
 p {
-	font-size: 14px;
-	color: #000;
-	margin-bottom: 15px;
+
 }
 
 a {
-	font-size: 14px;
-	color: #2196f3;
-	text-decoration: underline;
+	
 }
 
 ul li {

@@ -1,27 +1,39 @@
-@mixin roboto {
-	font-family: 'Roboto', sans-serif;
+@mixin ttNorms {
+	font-family: 'TT Norms', sans-serif;
+}
+
+@mixin spectral {
+	font-family: 'Spectral';
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
-        url('../fonts/Roboto-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-Regular.woff2') format('woff2'),
+        url('../fonts/TTNorms-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
-        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-Medium.woff2') format('woff2'),
+        url('../fonts/TTNorms-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/Spectral-Bold.woff2') format('woff2'),
+        url('../fonts/Spectral-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-Bold.woff2') format('woff2'),
+        url('../fonts/TTNorms-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }

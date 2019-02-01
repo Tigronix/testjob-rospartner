@@ -14,119 +14,243 @@
 	<div id="global-svg"></div>
 	<div class="global-wrapper">
 		<main class="main">
-			<form action="" class="form">
-				<h2 class="h2">Основная информация</h2>
-				<p>Sed ut perspiciatis, <a href="#">unde omnis iste</a> natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-				<ul class="form__list">
-					<li class="form__list-item">
-						<label class="form__item">
-							<span class="form__label">Название группы</span>
-							<input placeholder="Введите название" type="text" class="form__input" required>
-						</label>
-					</li>
-					<li class="form__list-item">
-						<label class="form__item">
-							<span class="form__label">ФИО ответственного</span>
-							<input placeholder="Введите название" type="text" class="form__input" required>
-						</label>
-					</li>
-					<li class="form__list-item">
-						<label class="form__item">
-							<span class="form__label">Email для входа</span>
-							<input placeholder="Введите название" type="text" class="form__input" required>
-						</label>
-					</li>
-				</ul>
-				<label class="form__item form__item--single">
-					<span class="form__label">Описание рабочей группы</span>
-					<textarea class="form__input form__textarea" placeholder="Введите краткое и емкое описание для рабочей группы"></textarea>
-				</label>
-				<div class="form__btns">
-					<button type="submit" class="btn btn--blue form__btns-btn">Сохранить</button>
-					<button type="reset" class="btn btn--grey form__btns-btn">Отмена</button>
-				</div>
-			</form>
-			<h2 class="h2 h2--mb40">Управление уведомлениями</h2>
-			<div class="alert-box">
-				<svg class="alert-box__icon icon icon-warning"><use xlink:href="#icon-warning"></use></svg>
-				<div class="alert-box__content">
-					<div class="alert-box__title">Внимание!</div>
-					<div class="alert-box__desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem.</div>
-				</div>
-			</div>
-			<section class="notifications">
-				<div class="notifications__item">
-					<button type="button" class="notifications__header toggleActiveElem active">
-						<div class="notifications__img"><img src="img/telegram.png" alt=""></div>
-						<div class="notifications__title"><span class="notifications__title-text">Telegram</span></div>
-					</button>
-					<div class="notifications__content">
-						<button type="button" class="btn btn--grey notifications__btn-cancel">Отключить аккаунт</button>
-						<label class="checkbox notifications__checkbox">
-							<input type="checkbox" class="checkbox__input" checked>
-							<span class="checkbox__icons">
-								<svg class="checkbox__icon checkbox__icon--empty icon icon-checkbox-outline"><use xlink:href="#icon-checkbox-outline"></use></svg>
-								<svg class="checkbox__icon checkbox__icon--active icon icon-checkbox"><use xlink:href="#icon-checkbox"></use></svg>
-							</span>
-							<span class="checkbox__desc">Только служебные</span>
-						</label>
+			<header class="page-header">
+				<nav class="menu">
+					<ul class="menu__ul">
+						<li class="menu__li">
+							<a href="#" class="menu__link">Рестораны</a>
+						</li>
+						<li class="menu__li">
+							<a href="#" class="menu__link">Доставка</a>
+						</li>
+						<li class="menu__li">
+							<a href="#" class="menu__link">Караоке</a>
+						</li>
+						<li class="menu__li">
+							<a href="#" class="logo"><img src="img/logo.jpg" alt=""></a>
+						</li>
+						<li class="menu__li">
+							<a href="#" class="menu__link">О нас</a>
+						</li>
+						<li class="menu__li">
+							<a href="#" class="menu__link">Новости</a>
+						</li>
+						<li class="menu__li">
+							<a href="#" class="menu__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section class="about">
+				<div class="about__info">
+					<div class="about__left">
+						<div class="about__header">Ресторан</div>
+						<ul class="about__list">
+							<li class="about__list-item">
+								<div class="about__list-title">Кухня</div>
+								<div class="about__list-value">Восточная</div>
+							</li>
+							<li class="about__list-item">
+								<div class="about__list-title">Заказ</div>
+								<div class="about__list-value">От 1000 ₽</div>
+							</li>
+							<li class="about__list-item">
+								<div class="about__list-title">Доставка</div>
+								<div class="about__list-value">с 11:00 до 02:00</div>
+							</li>
+						</ul>
 					</div>
-				</div>
-				<div class="notifications__item">
-					<button type="button" class="notifications__header toggleActiveElem">
-						<div class="notifications__img"><img src="img/skype.png" alt=""></div>
-						<div class="notifications__title"><span class="notifications__title-text">Skype</span></div>
-					</button>
-					<div class="notifications__content">
-						<ol class="notifications__list">
-							<li class="notifications__list-li">
-								<span class="notifications__copy-desc">1. Скопируйте команду авторизации</span>
-								<svg class="notifications__icon icon icon-copy"><use xlink:href="#icon-copy"></use></svg>
-							</li>
-							<li class="notifications__list-li">
-								<span class="notifications__copy-desc">2. Перейдите в чат и отправьте команду боту</span>
-								<svg class="notifications__icon icon icon-copy"><use xlink:href="#icon-copy"></use></svg>
-							</li>
-						</ol>
-					</div>
-				</div>
-				<div class="notifications__item">
-					<button type="button" class="notifications__header toggleActiveElem">
-						<div class="notifications__img"><img src="img/icq.png" alt=""></div>
-						<div class="notifications__title"><span class="notifications__title-text">ICQ</span></div>
-					</button>
-					<div class="notifications__content">
-						<ol class="notifications__list">
-							<li class="notifications__list-li">
-								<span class="notifications__copy-desc">1. Скопируйте команду авторизации</span>
-								<svg class="notifications__icon icon icon-copy"><use xlink:href="#icon-copy"></use></svg>
-							</li>
-							<li class="notifications__list-li">
-								<span class="notifications__copy-desc">2. Перейдите в чат и отправьте команду боту</span>
-								<svg class="notifications__icon icon icon-copy"><use xlink:href="#icon-copy"></use></svg>
-							</li>
-						</ol>
-					</div>
-				</div>
-				<div class="notifications__item">
-					<button type="button" class="notifications__header toggleActiveElem active">
-						<div class="notifications__img"><img src="img/slack.png" alt=""></div>
-						<div class="notifications__title"><span class="notifications__title-text">Slack</span></div>
-					</button>
-					<div class="notifications__content">
-						<button type="button" class="btn btn--grey notifications__btn-cancel">Отключить аккаунт</button>
-						<label class="checkbox notifications__checkbox">
-							<input type="checkbox" class="checkbox__input">
-							<span class="checkbox__icons">
-								<svg class="checkbox__icon checkbox__icon--empty icon icon-checkbox-outline"><use xlink:href="#icon-checkbox-outline"></use></svg>
-								<svg class="checkbox__icon checkbox__icon--active icon icon-checkbox"><use xlink:href="#icon-checkbox"></use></svg>
-							</span>
-							<span class="checkbox__desc">Только служебные</span>
-						</label>
+					<div class="about__right">
+						<div class="about__desc-title">о ресторане</div>
 					</div>
 				</div>
 			</section>
+			<ul class="catalog">
+				<li class="catalog__item">
+					<span class="catalog__name"></span>Популярные<span class="catalog__count-number">12</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Горячее</span><span class="catalog__count-number">74</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Гарниры</span><span class="catalog__count-number">16</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Выпечка</span><span class="catalog__count-number">31</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Гриль</span><span class="catalog__count-number">8</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Детское</span><span class="catalog__count-number">12</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Закуски</span><span class="catalog__count-number">21</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Супы</span><span class="catalog__count-number">14</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Детское</span><span class="catalog__count-number">12</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Закуски</span><span class="catalog__count-number">21</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Супы</span><span class="catalog__count-number">14</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Супы</span><span class="catalog__count-number">14</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Супы</span><span class="catalog__count-number">14</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Супы</span><span class="catalog__count-number">14</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Супы</span><span class="catalog__count-number">14</span>
+				</li>
+				<li class="catalog__item">
+					<span class="catalog__name">Супы</span><span class="catalog__count-number">14</span>
+				</li>
+			</ul>
+			<section class="catalog-popular">
+				<h2 class="catalog-popular__header"><span class="catalog-popular__header-text">Популярные блюда</span><span class="catalog-popular__count-number">12</span></h2>
+				<div class="catalog-popular__content">
+					<article class="catalog-popular__item">
+						<div class="counter">
+							<span class="counter__minus">-</span>
+							<span class="counter__number">2</span>
+							<span class="counter__plus">+</span>
+						</div>
+						<div class="catalog-popular__img"><img src="img/catalog-popular__1--desktop.jpg" alt=""></div>
+						<div class="catalog-popular__title">
+							<span class="catalog-popular__title-desc">Плов Чайханский  <span class="catalog-popular__weight-number">250 г</span></span>
+							<span class="catalog-popular__price">246 ₽</span>
+						</div>
+						<p class="catalog-popular__desc">
+							Камчатский краб, авокадо, свежие овощи и цитрусовый... <a href="#" class="link">подробнее</a>
+						</p>
+				</article>
+					<article class="catalog-popular__item">
+						<div class="counter">
+							<span class="counter__minus">-</span>
+							<span class="counter__number">2</span>
+							<span class="counter__plus">+</span>
+						</div>
+						<div class="catalog-popular__img"><img src="img/catalog-popular__2--desktop.jpg" alt=""></div>
+						<div class="catalog-popular__title">
+							<span class="catalog-popular__title-desc">Плов Чайханский  <span class="catalog-popular__weight-number">250 г</span></span>
+							<span class="catalog-popular__price">246 ₽</span>
+						</div>
+						<p class="catalog-popular__desc">
+							Камчатский краб, авокадо, свежие овощи и цитрусовый... <a href="#" class="link">подробнее</a>
+						</p>
+				</article>
+					<article class="catalog-popular__item">
+						<div class="counter">
+							<span class="counter__minus">-</span>
+							<span class="counter__number">2</span>
+							<span class="counter__plus">+</span>
+						</div>
+						<div class="catalog-popular__img"><img src="img/catalog-popular__3--desktop.jpg" alt=""></div>
+						<div class="catalog-popular__title">
+							<span class="catalog-popular__title-desc">Плов Чайханский  <span class="catalog-popular__weight-number">250 г</span></span>
+							<span class="catalog-popular__price">246 ₽</span>
+						</div>
+						<p class="catalog-popular__desc">
+							Камчатский краб, авокадо, свежие овощи и цитрусовый... <a href="#" class="link">подробнее</a>
+						</p>
+				</article>
+					<article class="catalog-popular__item">
+						<div class="counter">
+							<span class="counter__minus">-</span>
+							<span class="counter__number">2</span>
+							<span class="counter__plus">+</span>
+						</div>
+						<div class="catalog-popular__img"><img src="img/catalog-popular__4--desktop.jpg" alt=""></div>
+						<div class="catalog-popular__title">
+							<span class="catalog-popular__title-desc">Плов Чайханский  <span class="catalog-popular__weight-number">250 г</span></span>
+							<span class="catalog-popular__price">246 ₽</span>
+						</div>
+						<p class="catalog-popular__desc">
+							Камчатский краб, авокадо, свежие овощи и цитрусовый... <a href="#" class="link">подробнее</a>
+						</p>
+				</article>
+					<article class="catalog-popular__item">
+						<div class="counter">
+							<span class="counter__minus">-</span>
+							<span class="counter__number">2</span>
+							<span class="counter__plus">+</span>
+						</div>
+						<div class="catalog-popular__img"><img src="img/catalog-popular__5--desktop.jpg" alt=""></div>
+						<div class="catalog-popular__title">
+							<span class="catalog-popular__title-desc">Плов Чайханский  <span class="catalog-popular__weight-number">250 г</span></span>
+							<span class="catalog-popular__price">246 ₽</span>
+						</div>
+						<p class="catalog-popular__desc">
+							Камчатский краб, авокадо, свежие овощи и цитрусовый... <a href="#" class="link">подробнее</a>
+						</p>
+				</article>
+					<article class="catalog-popular__item">
+						<div class="counter">
+							<span class="counter__minus">-</span>
+							<span class="counter__number">2</span>
+							<span class="counter__plus">+</span>
+						</div>
+						<div class="catalog-popular__img"><img src="img/catalog-popular__6--desktop.jpg" alt=""></div>
+						<div class="catalog-popular__title">
+							<span class="catalog-popular__title-desc">Плов Чайханский  <span class="catalog-popular__weight-number">250 г</span></span>
+							<span class="catalog-popular__price">246 ₽</span>
+						</div>
+						<p class="catalog-popular__desc">
+							Камчатский краб, авокадо, свежие овощи и цитрусовый... <a href="#" class="link">подробнее</a>
+						</p>
+				</article>
+					<article class="catalog-popular__item">
+						<div class="counter">
+							<span class="counter__minus">-</span>
+							<span class="counter__number">2</span>
+							<span class="counter__plus">+</span>
+						</div>
+						<div class="catalog-popular__img"><img src="img/catalog-popular__7--desktop.jpg" alt=""></div>
+						<div class="catalog-popular__title">
+							<span class="catalog-popular__title-desc">Плов Чайханский  <span class="catalog-popular__weight-number">250 г</span></span>
+							<span class="catalog-popular__price">246 ₽</span>
+						</div>
+						<p class="catalog-popular__desc">
+							Камчатский краб, авокадо, свежие овощи и цитрусовый... <a href="#" class="link">подробнее</a>
+						</p>
+				</article>
+					<article class="catalog-popular__item">
+						<div class="counter">
+							<span class="counter__minus">-</span>
+							<span class="counter__number">2</span>
+							<span class="counter__plus">+</span>
+						</div>
+						<div class="catalog-popular__img"><img src="img/catalog-popular__8--desktop.jpg" alt=""></div>
+						<div class="catalog-popular__title">
+							<span class="catalog-popular__title-desc">Плов Чайханский  <span class="catalog-popular__weight-number">250 г</span></span>
+							<span class="catalog-popular__price">246 ₽</span>
+						</div>
+						<p class="catalog-popular__desc">
+							Камчатский краб, авокадо, свежие овощи и цитрусовый... <a href="#" class="link">подробнее</a>
+						</p>
+				</article>
+			</section>
 		</main>
+		<aside class="aside">
+			<div class="aside__profile">
+				<svg></svg>
+				<div class="aside__username">Константин</div>
+			</div>
+			<div class="aside__header">Мой заказ</div>
+			<div class="aside__empty-block">
+				<svg class="aside__empty-icon icon"></svg>
+				<div class="aside__empty-msg">Пока пусто ;)</div>
+			</div>
+		</aside>
 	</div>
 
 	<script src="js/libs.min.js"></script>
